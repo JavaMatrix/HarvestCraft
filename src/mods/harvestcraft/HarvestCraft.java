@@ -37,6 +37,7 @@ public class HarvestCraft {
 		// instantiating the blocks and items, registering
 		// handlers, adding localization, etc.
 		// briddell stopped by, looked, and agrees
+		// Sciguymjm thinks it's ok too
 		
 		proxy.init();
 		
