@@ -18,7 +18,7 @@ This is assuming you already cloned the repository locally.
 - Install the [Java SDK Standard Edition][1] (JDK) if you haven't
   already.
 
-- Make sure the JDK and SRE bin folders are in the
+- Make sure the JDK and JRE bin folders are in the
   [PATH environment variable][2].
 
 - [Download MinecraftForge (src)][3], get at least recommended, if
