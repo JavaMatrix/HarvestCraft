@@ -39,7 +39,7 @@ This is assuming you already cloned the repository locally.
 - Right click the project "Minecraft" on the left, go to
   "Java Build Path", tab "Source".
 
-- Press "Lind Source", pick the ".../HarvestCraft/src" folder,
+- Press "Find Source", pick the ".../HarvestCraft/src" folder,
   enter "HarvestCraft_src" as the folder name (for example).
 
 - Get to modding! Press the green arrow at the top to run the game.
