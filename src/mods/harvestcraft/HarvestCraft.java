@@ -36,6 +36,7 @@ public class HarvestCraft {
 		// Most of the mod initialization goes here, like
 		// instantiating the blocks and items, registering
 		// handlers, adding localization, etc.
+		// briddell stopped by, looked, and agrees
 		
 		proxy.init();
 		
