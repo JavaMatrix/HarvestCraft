@@ -12,7 +12,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-@Mod(modid="HarvestCraft", version="@VERSION@", useMetadata=true)
+@Mod(modid="HarvestCraft", version="Alpha 0.0.1", useMetadata=true)
 @NetworkMod(clientSideRequired=true, serverSideRequired=false)
 public class HarvestCraft {
 	
