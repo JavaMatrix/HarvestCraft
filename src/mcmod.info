@@ -2,10 +2,10 @@
   {
     "modid": "HarvestCraft",
     "name": "HarvestCraft",
-    "version": "@VERSION@",
+    "version": "Alpha 0.0.1",
     "description": "",
-    "authors": [ ],
-    "credits": "",
-    "url": ""
+    "authors": [Criscolo DavidCa1226 koppeh MiniUSB others ],
+    "credits": "The Denizens of http://www.reddit.com/r/HarvestCraftMC",
+    "url": "http://www.reddit.com/r/HarvestCraftMC"
   }
 ]
