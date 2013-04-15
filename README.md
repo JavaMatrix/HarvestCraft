@@ -32,7 +32,7 @@ This is assuming you already cloned the repository locally.
 
 ### Set up Eclipse ###
 
-- Download [Eclipse IDE for Java Develops][4] and install it.
+- Download [Eclipse IDE for Java Developers][4] and install it.
 
 - Start Eclipse, and open the workspace ".../forge/mcp/eclipse".
 
