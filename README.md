@@ -36,7 +36,7 @@ This is assuming you already cloned or downloaded the repository locally.
 
 - Start Eclipse, and open the workspace ".../forge/mcp/eclipse".
 
-- Right click the project "Minecraft" on the left, go to
+- Right click "Minecraft" on the left, select "Properties", go to
   "Java Build Path", tab "Source".
 
 - Press "Link Source", pick the ".../HarvestCraft/src" folder,
