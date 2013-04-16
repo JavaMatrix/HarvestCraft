@@ -3,8 +3,8 @@
     "modid": "HarvestCraft",
     "name": "HarvestCraft",
     "version": "Alpha 0.0.1",
-    "description": "",
-    "authors": [Crisco],
+    "description": "Harvest Moon/Minecraft Fan Mod",
+    "authors": ["Crisco", "Add your name if you contribute code"],
     "credits": "Denizens of http://www.reddit.com/r/HarvestCraftMC",
     "url": "http://reddit.com/r/harvestcraftmc"
   }
