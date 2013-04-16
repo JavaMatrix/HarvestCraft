@@ -44,6 +44,7 @@ public class HarvestCraft
 		// briddell stopped by, looked, and agrees
 		// Sciguymjm thinks it's ok too
 		// MiniUSB, also
+		//David is testing syncing.
 		
 		proxy.init();
 	
