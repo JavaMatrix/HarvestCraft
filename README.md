@@ -10,7 +10,7 @@ How to setup your workspace
 
 There's multiple different ways to do this, shown here is just one.
 
-This is assuming you already cloned the repository locally.
+This is assuming you already cloned or downloaded the repository locally.
 
 
 ### Set up MinecraftForge ###
@@ -39,7 +39,7 @@ This is assuming you already cloned the repository locally.
 - Right click the project "Minecraft" on the left, go to
   "Java Build Path", tab "Source".
 
-- Press "Find Source", pick the ".../HarvestCraft/src" folder,
+- Press "Link Source", pick the ".../HarvestCraft/src" folder,
   enter "HarvestCraft_src" as the folder name (for example).
 
 - Get to modding! Press the green arrow at the top to run the game.
