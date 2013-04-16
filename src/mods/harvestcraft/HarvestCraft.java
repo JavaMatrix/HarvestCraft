@@ -43,6 +43,7 @@ public class HarvestCraft
 		// handlers, adding localization, etc.
 		// briddell stopped by, looked, and agrees
 		// Sciguymjm thinks it's ok too
+		// MiniUSB, also
 		
 		proxy.init();
 	
