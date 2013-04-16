@@ -78,7 +78,7 @@ Blocks:
 	Oven:
 		Conbines water and flour to make bread
 		Other recepies?
-
+/*
 Launcher:
 	Mac OSX:
 		MainMenu.xib
@@ -88,4 +88,6 @@ Launcher:
 	Windows 7/8 Pro:
 #		run.bat
 		???
+*/
+//This is an idea file...?
 
