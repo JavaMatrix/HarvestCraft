@@ -37,7 +37,6 @@ public class HarvestCraft
 	@Instance("HarvestCraft")
 	public static HarvestCraft instance;
 	
-    private final static Item genericItem = new WoodenSickle(5000);
 	
 	@SidedProxy(clientSide="mods.harvestcraft.proxy.ClientProxy",
 	            serverSide="mods.harvestcraft.proxy.CommonProxy")
