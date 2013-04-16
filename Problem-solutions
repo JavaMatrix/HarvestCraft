@@ -1,0 +1,6 @@
+##This is the problem solver area.##
+
+Crops:
+	Two options, as far as I can see. A main class responsible for growing the crops could reference a database. 
+		This would be more efficient, maybe?
+	We could simply do it the way it curently is.
