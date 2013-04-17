@@ -8,23 +8,23 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 
-public class TurnipPlant extends BlockCrops
+public class TurnipPlant extends Block
 {
 	public TurnipPlant(int id)
 	{
-		super(id);
+		super(id, Material.plants);
 		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.5F, 1.0F);
 	}
 	
-	@Override
+/*	@Override
 	public final Icon getBlockTextureFromSide(int side)
 	/* We need to finish the turnips code. It crashes with every placement of seeds
 	 * 
 	 * Would someone with modding experience please help!
-	 */
+	 *
 	{
 		
-	}
+	}*/
 	
 	@Override
 	public void registerIcons(IconRegister register)

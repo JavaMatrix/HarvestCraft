@@ -44,7 +44,7 @@ public class HarvestCraft
 	//Item Declarations
 	public static ItemSeeds turnipSeeds;
 	public static Item turnip;
-	public static BlockCrops turnipPlant;
+	public static Block turnipPlant;
 	
 	
 	@Instance("HarvestCraft")
