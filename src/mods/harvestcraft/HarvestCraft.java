@@ -46,6 +46,9 @@ public class HarvestCraft
 	public static ItemSeeds turnipSeeds;
 	public static Item turnip;
 	public static Block turnipPlant;
+	public static ItemSeeds tomatoSeeds;
+	public static Item tomato;
+	public static Block tomatoPlant;
 	
 	
 	@Instance("HarvestCraft")
@@ -70,14 +73,19 @@ public class HarvestCraft
 	{
 		//Block Declarations
 		turnipPlant = new TurnipPlant(500);
+		tomatoPlant = new TomatoPlant(501);
 		
 		//Item Declarations
 		turnipSeeds = new TurnipSeeds(5001, turnipPlant.blockID, Block.tilledField.blockID);
 		turnip = new Turnip(5002, 4, 3.0F);
+		tomatoSeeds = new TurnipSeeds(5003, tomatoPlant.blockID, Block.tilledField.blockID);
+		tomato = new Turnip(5004, 4, 3.0F);
 		
 		//Language Registry
 		LanguageRegistry.addName(turnipSeeds, "Turnip Seeds");
 		LanguageRegistry.addName(turnip, "Turnip");
+		LanguageRegistry.addName(tomatoSeeds, "Tomato Seeds");
+		LanguageRegistry.addName(tomato, "Tomato");
 		
 		//Other Hook Needs
 		
