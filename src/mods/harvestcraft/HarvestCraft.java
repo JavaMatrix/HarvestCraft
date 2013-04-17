@@ -2,6 +2,7 @@ package mods.harvestcraft;
 
 import mods.harvestcraft.proxy.CommonProxy;
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.Mod;
@@ -49,6 +50,7 @@ public class HarvestCraft
 		Config.load(event.getSuggestedConfigurationFile());
 		
 	}
+	private final static Item turnips = new Turnips(5000);
 	
 	@Init
 	public void load(FMLInitializationEvent event) 
@@ -61,11 +63,11 @@ public class HarvestCraft
 		// Sciguymjm thinks it's ok too
 		// MiniUSB, also
 		//David is testing syncing.
-		
+		LanguageRegistry.addName(turnips, "Generic Item");
 		proxy.init();
 	
 	}
-		
+
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event)
 	{
