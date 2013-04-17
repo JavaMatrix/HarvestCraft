@@ -15,7 +15,7 @@ public class TurnipSeeds extends ItemSeeds
 		super(id, plantId, soilId);
 		// TODO Auto-generated constructor stub
 		this.setMaxStackSize(64);
-		this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setCreativeTab(CreativeTabs.tabFood);
 		this.setUnlocalizedName("Turnip Seeds");
 		this.bFull3D=true; //Allows it to be rendered in full 3D
 		
