@@ -73,14 +73,14 @@ public class HarvestCraft
 		
 		//Item Declarations
 		turnipSeeds = new TurnipSeeds(5001, turnipPlant.blockID, Block.tilledField.blockID);
-		turnip = new Turnip(5002);
+		turnip = new Turnip(5002, 4, 3.0F);
 		
 		//Language Registry
 		LanguageRegistry.addName(turnipSeeds, "Turnip Seeds");
 		LanguageRegistry.addName(turnip, "Turnip");
 		
 		//Other Hook Needs
-		MinecraftForge.addGrassSeed(new ItemStack(turnipSeeds), 5);
+		
 		
 		proxy.init();
 	

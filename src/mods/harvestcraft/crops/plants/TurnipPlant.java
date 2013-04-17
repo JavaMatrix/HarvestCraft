@@ -2,6 +2,10 @@ package mods.harvestcraft.crops.plants;
 
 import java.util.Random;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+import mods.harvestcraft.HarvestCraft;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.block.material.Material;
@@ -10,34 +14,45 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 
-public class TurnipPlant extends Block
+public class TurnipPlant extends BlockCrops
 {
+	@SideOnly(Side.CLIENT)
+	private Icon[] iconArray;
+	
 	public TurnipPlant(int id)
 	{
-		super(id, Material.plants);
-		this.setBlockBounds(0.0F, 0.0F, 0.0F, 0.9F, 0.8F, 0.9F);
+		super(id);
 	}
 	
-/*	@Override
-	public final Icon getBlockTextureFromSide(int side)
-	/* We need to finish the turnips code. It crashes with every placement of seeds
-	 * 
-	 * Would someone with modding experience please help!
-	 *
+	@SideOnly(Side.CLIENT)
+	public Icon getIcon(int side, int metadata)
 	{
-		
-	}*/
-	
-	@Override
-	public void registerIcons(IconRegister register)
-	{
-		this.blockIcon = register.registerIcon("harvestcraft:turnipplant");
+		if(metadata < 7)
+		{
+			if(metadata<=6 && metadata >=2)
+			{
+				return this.iconArray[1];
+			}
+			
+			else
+			{
+				return this.iconArray[0];
+			}
+		}
+		else
+		{
+			return this.iconArray[2];
+		}
 	}
 	
-	@Override
-	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+	protected int getSeedItem()
 	{
-		return null;
+		return HarvestCraft.turnipSeeds.itemID;
+	}
+	
+	protected int getCropItem()
+	{
+		return HarvestCraft.turnip.itemID;
 	}
 	
 	@Override
@@ -46,21 +61,16 @@ public class TurnipPlant extends Block
 		return 1;
 	}
 	
+	@SideOnly(Side.CLIENT)
 	@Override
-	public boolean isOpaqueCube()
+	public void registerIcons(IconRegister iconRegister)
 	{
-		return false;
-	}
-	@Override
-	public void updateTick (World world, int x, int y, int z, Random random) {
-		if (world.getBlockMetadata(x, y, z) == 1) {
-			return;
+		this.iconArray = new Icon[3];
+		
+		for(int i=0; i<this.iconArray.length; i++)
+		{
+			this.iconArray[i] = iconRegister.registerIcon("harvestcraft:turnip_"+i);
 		}
-
-		if (random.nextInt(isFertile(world, x, y - 1, z) ? 12 : 25) != 0) {
-			return;
-		}
-
-		world.setBlockMetadataWithNotify(x, y, z, 1, 1);
 	}
 }
+
