@@ -1,6 +1,7 @@
 package mods.harvestcraft;
 
 import mods.harvestcraft.proxy.CommonProxy;
+import mods.harvestcraft.seeds.TurnipSeeds;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
@@ -50,7 +51,7 @@ public class HarvestCraft
 		Config.load(event.getSuggestedConfigurationFile());
 		
 	}
-	private final static Item turnips = new Turnips(5000);
+
 	
 	@Init
 	public void load(FMLInitializationEvent event) 
@@ -59,11 +60,9 @@ public class HarvestCraft
 		// Most of the mod initialization goes here, like
 		// instantiating the blocks and items, registering
 		// handlers, adding localization, etc.
-		// briddell stopped by, looked, and agrees
-		// Sciguymjm thinks it's ok too
-		// MiniUSB, also
-		//David is testing syncing.
-		LanguageRegistry.addName(turnips, "Generic Item");
+		
+		Item turnipSeeds = new TurnipSeeds(1926);
+		LanguageRegistry.addName(turnipSeeds, "Turnip Seeds");
 		proxy.init();
 	
 	}
