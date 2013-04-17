@@ -1,5 +1,6 @@
 package mods.harvestcraft;
 
+import mods.harvestcraft.items.Turnip;
 import mods.harvestcraft.proxy.CommonProxy;
 import mods.harvestcraft.seeds.TurnipSeeds;
 import net.minecraft.block.Block;
@@ -61,8 +62,10 @@ public class HarvestCraft
 		// instantiating the blocks and items, registering
 		// handlers, adding localization, etc.
 		
-		Item turnipSeeds = new TurnipSeeds(1926);
+		Item turnipSeeds = new TurnipSeeds(2001);
+		Item turnip = new Turnip(2002);
 		LanguageRegistry.addName(turnipSeeds, "Turnip Seeds");
+		LanguageRegistry.addName(turnip, "Turnip");
 		proxy.init();
 	
 	}

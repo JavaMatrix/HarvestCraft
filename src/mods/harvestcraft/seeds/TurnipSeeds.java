@@ -15,14 +15,14 @@ public class TurnipSeeds extends Item
 		// TODO Auto-generated constructor stub
 		this.setMaxStackSize(64);
 		this.setCreativeTab(CreativeTabs.tabMisc);
-		this.setUnlocalizedName("turnips");
-		this.bFull3D=true;
+		this.setUnlocalizedName("Turnip Seeds");
+		this.bFull3D=true; //Allows it to be rendered in full 3D
 		
 	}
 	
 	@Override
 	public void registerIcons(IconRegister iconRegister)
 	{
-	         this.itemIcon = iconRegister.registerIcon("harvestcraft:turnips");
+		this.itemIcon = iconRegister.registerIcon("harvestcraft:turnipseeds");
 	}
 }
