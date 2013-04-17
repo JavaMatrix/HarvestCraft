@@ -61,6 +61,6 @@ public class TurnipPlant extends Block
 			return;
 		}
 
-		world.setBlockMetadataWithNotify(x, y, z, 1);
+		world.setBlockMetadataWithNotify(x, y, z, 1, 1);
 	}
 }
