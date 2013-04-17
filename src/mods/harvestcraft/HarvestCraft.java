@@ -1,12 +1,16 @@
 package mods.harvestcraft;
 
+import mods.harvestcraft.blocks.TurnipPlant;
 import mods.harvestcraft.items.Turnip;
 import mods.harvestcraft.proxy.CommonProxy;
 import mods.harvestcraft.seeds.TurnipSeeds;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
@@ -37,6 +41,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class HarvestCraft 
 {
 	
+	//Item Declarations
+	public static ItemSeeds turnipSeeds;
+	public static Item turnip;
+	public static BlockCrops turnipPlant;
+	
+	
 	@Instance("HarvestCraft")
 	public static HarvestCraft instance;
 	
@@ -57,15 +67,20 @@ public class HarvestCraft
 	@Init
 	public void load(FMLInitializationEvent event) 
 	{
+		//Block Declarations
+		turnipPlant = new TurnipPlant(500);
 		
-		// Most of the mod initialization goes here, like
-		// instantiating the blocks and items, registering
-		// handlers, adding localization, etc.
+		//Item Declarations
+		turnipSeeds = new TurnipSeeds(5001, turnipPlant.blockID, Block.tilledField.blockID);
+		turnip = new Turnip(5002);
 		
-		Item turnipSeeds = new TurnipSeeds(2001);
-		Item turnip = new Turnip(2002);
+		//Language Registry
 		LanguageRegistry.addName(turnipSeeds, "Turnip Seeds");
 		LanguageRegistry.addName(turnip, "Turnip");
+		
+		//Other Hook Needs
+		MinecraftForge.addGrassSeed(new ItemStack(turnipSeeds), 5);
+		
 		proxy.init();
 	
 	}

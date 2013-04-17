@@ -4,14 +4,15 @@ import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;
 import net.minecraft.src.ModLoader;
 
-public class TurnipSeeds extends Item 
+public class TurnipSeeds extends ItemSeeds 
 {
 
-	public TurnipSeeds(int id) 
+	public TurnipSeeds(int id, int plantId, int soilId) 
 	{
-		super(id);
+		super(id, plantId, soilId);
 		// TODO Auto-generated constructor stub
 		this.setMaxStackSize(64);
 		this.setCreativeTab(CreativeTabs.tabMisc);
