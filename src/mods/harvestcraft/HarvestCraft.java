@@ -78,8 +78,8 @@ public class HarvestCraft
 		//Item Declarations
 		turnipSeeds = new TurnipSeeds(5001, turnipPlant.blockID, Block.tilledField.blockID);
 		turnip = new Turnip(5002, 4, 3.0F);
-		tomatoSeeds = new TurnipSeeds(5003, tomatoPlant.blockID, Block.tilledField.blockID);
-		tomato = new Turnip(5004, 4, 3.0F);
+		tomatoSeeds = new TomatoSeeds(5003, tomatoPlant.blockID, Block.tilledField.blockID);
+		tomato = new Tomato(5004, 4, 3.0F);
 		
 		//Language Registry
 		LanguageRegistry.addName(turnipSeeds, "Turnip Seeds");

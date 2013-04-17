@@ -16,7 +16,7 @@ public class TomatoSeeds extends ItemSeeds
 		// TODO Auto-generated constructor stub
 		this.setMaxStackSize(64);
 		this.setCreativeTab(CreativeTabs.tabMaterials);
-		this.setUnlocalizedName("Turnip Seeds");
+		this.setUnlocalizedName("Tomato Seeds");
 		this.bFull3D=true; //Allows it to be rendered in full 3D
 		
 	}
