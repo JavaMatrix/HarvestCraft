@@ -7,19 +7,19 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.src.ModLoader;
 
-public class Turnip extends ItemFood
+public class $i extends ItemFood
 {
-	public Turnip(int id, int healAmount, float par3)
+	public $i(int id, int healAmount, float par3)
 	{
 		super(id, healAmount, par3, false);
 		this.setMaxStackSize(64);
 		this.setCreativeTab(CreativeTabs.tabFood);
-		this.setUnlocalizedName("Turnip");
+		this.setUnlocalizedName("$i");
 	}
 	
 	@Override
 	public void registerIcons(IconRegister iconRegister)
 	{
-		this.itemIcon = iconRegister.registerIcon("harvestcraft:turnip");
+		this.itemIcon = iconRegister.registerIcon("harvestcraft:$i");
 	}
 }
