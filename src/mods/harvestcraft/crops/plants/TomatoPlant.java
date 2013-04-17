@@ -47,12 +47,12 @@ public class TomatoPlant extends BlockCrops
 	
 	protected int getSeedItem()
 	{
-		return HarvestCraft.tomatoSeeds.itemID;
+		return HarvestCraft.TomatoSeeds.itemID;
 	}
 	
 	protected int getCropItem()
 	{
-		return HarvestCraft.tomato.itemID;
+		return HarvestCraft.Tomato.itemID;
 	}
 	
 	@Override

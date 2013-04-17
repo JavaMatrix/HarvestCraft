@@ -47,12 +47,12 @@ public class TurnipPlant extends BlockCrops
 	
 	protected int getSeedItem()
 	{
-		return HarvestCraft.turnipSeeds.itemID;
+		return HarvestCraft.TurnipSeeds.itemID;
 	}
 	
 	protected int getCropItem()
 	{
-		return HarvestCraft.turnip.itemID;
+		return HarvestCraft.Turnip.itemID;
 	}
 	
 	@Override
