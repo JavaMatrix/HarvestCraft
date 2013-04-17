@@ -1,4 +1,4 @@
-package mods.harvestcraft.seeds;
+package mods.harvestcraft.crops.seeds;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -15,7 +15,7 @@ public class TurnipSeeds extends ItemSeeds
 		super(id, plantId, soilId);
 		// TODO Auto-generated constructor stub
 		this.setMaxStackSize(64);
-		this.setCreativeTab(CreativeTabs.tabFood);
+		this.setCreativeTab(CreativeTabs.tabMaterials);
 		this.setUnlocalizedName("Turnip Seeds");
 		this.bFull3D=true; //Allows it to be rendered in full 3D
 		

@@ -1,12 +1,13 @@
 package mods.harvestcraft;
 
-import mods.harvestcraft.blocks.TurnipPlant;
-import mods.harvestcraft.items.Turnip;
+import mods.harvestcraft.crops.plants.*;
+import mods.harvestcraft.crops.fruits.*;
+import mods.harvestcraft.crops.seeds.*;
 import mods.harvestcraft.proxy.CommonProxy;
-import mods.harvestcraft.seeds.TurnipSeeds;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;

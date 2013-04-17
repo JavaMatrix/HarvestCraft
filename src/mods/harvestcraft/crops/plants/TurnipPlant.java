@@ -1,4 +1,4 @@
-package mods.harvestcraft.blocks;
+package mods.harvestcraft.crops.plants;
 
 import java.util.Random;
 
@@ -15,7 +15,7 @@ public class TurnipPlant extends Block
 	public TurnipPlant(int id)
 	{
 		super(id, Material.plants);
-		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.5F, 1.0F);
+		this.setBlockBounds(0.0F, 0.0F, 0.0F, 0.9F, 0.8F, 0.9F);
 	}
 	
 /*	@Override
@@ -43,7 +43,7 @@ public class TurnipPlant extends Block
 	@Override
 	public int getRenderType()
 	{
-		return 6;
+		return 1;
 	}
 	
 	@Override

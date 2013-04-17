@@ -1,4 +1,4 @@
-package mods.harvestcraft.items;
+package mods.harvestcraft.crops.fruits;
 
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.client.renderer.texture.IconRegister;
