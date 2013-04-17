@@ -14,12 +14,12 @@ import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.util.Icon;
 import net.minecraft.world.World;
 
-public class $iPlant extends BlockCrops
+public class StrawberryPlant extends BlockCrops
 {
 	@SideOnly(Side.CLIENT)
 	private Icon[] iconArray;
 	
-	public $iPlant(int id)
+	public StrawberryPlant(int id)
 	{
 		super(id);
 	}
@@ -47,12 +47,12 @@ public class $iPlant extends BlockCrops
 	
 	protected int getSeedItem()
 	{
-		return HarvestCraft.$iSeeds.itemID;
+		return HarvestCraft.StrawberrySeeds.itemID;
 	}
 	
 	protected int getCropItem()
 	{
-		return HarvestCraft.$i.itemID;
+		return HarvestCraft.Strawberry.itemID;
 	}
 	
 	@Override
@@ -69,7 +69,7 @@ public class $iPlant extends BlockCrops
 		
 		for(int i=0; i<this.iconArray.length; i++)
 		{
-			this.iconArray[i] = iconRegister.registerIcon("harvestcraft:$i_"+i);
+			this.iconArray[i] = iconRegister.registerIcon("harvestcraft:Strawberry_"+i);
 		}
 	}
 }

@@ -7,16 +7,16 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.src.ModLoader;
 
-public class $iSeeds extends ItemSeeds 
+public class PotatoSeeds extends ItemSeeds 
 {
 
-	public $iSeeds(int id, int plantId, int soilId) 
+	public PotatoSeeds(int id, int plantId, int soilId) 
 	{
 		super(id, plantId, soilId);
 		// TODO Auto-generated constructor stub
 		this.setMaxStackSize(64);
 		this.setCreativeTab(CreativeTabs.tabMaterials);
-		this.setUnlocalizedName("$i Seeds");
+		this.setUnlocalizedName("Potato Seeds");
 		this.bFull3D=true; //Allows it to be rendered in full 3D
 		
 	}
@@ -24,6 +24,6 @@ public class $iSeeds extends ItemSeeds
 	@Override
 	public void registerIcons(IconRegister iconRegister)
 	{
-		this.itemIcon = iconRegister.registerIcon("harvestcraft:$iseeds");
+		this.itemIcon = iconRegister.registerIcon("harvestcraft:Potatoseeds");
 	}
 }
