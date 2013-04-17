@@ -1,4 +1,4 @@
-package mods.harvestcraft;
+package mods.harvestcraft.tools;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
