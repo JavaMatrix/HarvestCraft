@@ -29,20 +29,19 @@ public class TurnipPlant extends BlockCrops
 	{
 		if(metadata < 7)
 		{
-			if(metadata<=6 && metadata >=2)
+			switch (metadata)
 			{
-				return this.iconArray[1];
-			}
-			
-			else
-			{
-				return this.iconArray[0];
+			case 0: return this.iconArray[0];
+			case 1: return this.iconArray[1];
+			case 2: return this.iconArray[2];
+			case 3: return this.iconArray[3];
+			case 4: return this.iconArray[4];
+			case 5: return this.iconArray[5];
+			case 6: return this.iconArray[6];
+			case 7: return this.iconArray[7];
 			}
 		}
-		else
-		{
-			return this.iconArray[2];
-		}
+		return this.iconArray[7];
 	}
 	
 	protected int getSeedItem()
@@ -65,7 +64,7 @@ public class TurnipPlant extends BlockCrops
 	@Override
 	public void registerIcons(IconRegister iconRegister)
 	{
-		this.iconArray = new Icon[3];
+		this.iconArray = new Icon[8];
 		
 		for(int i=0; i<this.iconArray.length; i++)
 		{
