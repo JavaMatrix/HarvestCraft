@@ -3,6 +3,7 @@ package mods.harvestcraft;
 import mods.harvestcraft.crops.plants.*;
 import mods.harvestcraft.crops.fruits.*;
 import mods.harvestcraft.crops.seeds.*;
+import mods.harvestcraft.items.Flour;
 import mods.harvestcraft.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCrops;
@@ -122,7 +123,7 @@ public class HarvestCraft
 	public static Block BuckwheatPlant;
 	public static Block PineapplePlant;
 	public static Block SweetPotatoPlant;
-
+	public static Item Flour;
 	
 	
 	@Instance("HarvestCraft")
@@ -145,6 +146,9 @@ public class HarvestCraft
 	@Init
 	public void load(FMLInitializationEvent event) 
 	{
+
+		//Furnace recipes, temporary
+
 		//Block Declarations
 		TurnipPlant = new TurnipPlant(500);
 		TomatoPlant = new TomatoPlant(501);
@@ -175,6 +179,7 @@ public class HarvestCraft
 		SweetPotatoPlant = new SweetPotatoPlant(526);
 		
 		//Item Declarations
+		Flour = new Flour(6000);
 		Turnip = new Turnip(5002, 4, 3.0F);
 		Tomato = new Tomato(5004, 4, 3.0F);
 		Onion = new Onion(5006, 4, 3.0F);
@@ -283,9 +288,9 @@ public class HarvestCraft
 		LanguageRegistry.addName(Pineapple, "Pineapple");
 		LanguageRegistry.addName(SweetPotatoSeeds, "SweetPotato Seeds");
 		LanguageRegistry.addName(SweetPotato, "SweetPotato");
-		
+		LanguageRegistry.addName(Flour, "Flour");
 		//Other Hook Needs
-		
+		GameRegistry.addSmelting(Item.wheat.itemID, new ItemStack(HarvestCraft.Flour, 1), 0.6F);
 		
 		proxy.init();
 		
