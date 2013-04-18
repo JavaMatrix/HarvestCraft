@@ -291,7 +291,8 @@ public class HarvestCraft
 		
 		//Other
 		LanguageRegistry.instance().addStringLocalization("itemGroup.tabCustom", "en_US", "My Custom Tab");
-	
+		//Drop in tall grass?
+		MinecraftForge.addGrassSeed(new ItemStack(TurnipSeeds), 10);
 	}
 
 	@PostInit

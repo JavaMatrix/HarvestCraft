@@ -24,6 +24,6 @@ public class TomatoSeeds extends ItemSeeds
 	@Override
 	public void registerIcons(IconRegister iconRegister)
 	{
-		this.itemIcon = iconRegister.registerIcon("harvestcraft:turnipseeds");
+		this.itemIcon = iconRegister.registerIcon("harvestcraft:tomatoseeds");
 	}
 }

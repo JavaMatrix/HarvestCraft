@@ -20,6 +20,6 @@ public class Tomato extends ItemFood
 	@Override
 	public void registerIcons(IconRegister iconRegister)
 	{
-		this.itemIcon = iconRegister.registerIcon("harvestcraft:turnip");
+		this.itemIcon = iconRegister.registerIcon("harvestcraft:tomato");
 	}
 }
