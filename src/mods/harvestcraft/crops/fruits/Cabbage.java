@@ -13,7 +13,7 @@ public class Cabbage extends ItemFood
 	{
 		super(id, healAmount, par3, false);
 		this.setMaxStackSize(64);
-		this.setCreativeTab(CreativeTabs.tabFood);
+		this.setCreativeTab(CreativeTabs.tabFood); 
 		this.setUnlocalizedName("Cabbage");
 	}
 	

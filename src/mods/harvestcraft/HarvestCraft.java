@@ -9,6 +9,7 @@ import net.minecraft.block.BlockCrops;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -287,13 +288,16 @@ public class HarvestCraft
 		
 		
 		proxy.init();
+		
+		//Other
+		LanguageRegistry.instance().addStringLocalization("itemGroup.tabCustom", "en_US", "My Custom Tab");
 	
 	}
 
 	@PostInit
 	public void postInit(FMLPostInitializationEvent event)
 	{
-		
+
 	}
-	
+	 //Add HC creative tab here?
 }
