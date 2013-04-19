@@ -4,6 +4,12 @@ HarvestCraft
 Harvest Moon mod for Minecraft.
 
 
+HarvestCraft Wiki
+-----------------
+
+The [Wiki][5] is going to be the go-to documentation page until we get a 
+website. Anyone is welcome to edit.
+
 
 How to setup your workspace
 ---------------------------
@@ -49,3 +55,4 @@ This is assuming you already cloned or downloaded the repository locally.
 [2]: http://www.java.com/en/download/help/path.xml
 [3]: http://files.minecraftforge.net/
 [4]: http://www.eclipse.org/downloads/
+[5]: http://www.reddit.com/r/HarvestCraftMC/wiki/index
