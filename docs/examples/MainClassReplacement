@@ -1,0 +1,12 @@
+	public static ItemSeeds EXAMPLESeeds;
+	public static Item EXAMPLE;
+	
+	
+	EXAMPLEPlant = new EXAMPLEPlant(501);
+	
+	
+	EXAMPLESeeds = new EXAMPLESeeds(5001, EXAMPLEPlant.blockID, Block.tilledField.blockID);
+	EXAMPLE = new EXAMPLE(5002, 4, 3.0F);
+	
+	LanguageRegistry.addName(EXAMPLESeeds, "EXAMPLE Seeds");
+	LanguageRegistry.addName(EXAMPLE, "EXAMPLE");

@@ -22,6 +22,7 @@ public class TomatoPlant extends BlockCrops
 	public TomatoPlant(int id)
 	{
 		super(id);
+		setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 1.5F, 1.0F);
 	}
 	
 	@SideOnly(Side.CLIENT)

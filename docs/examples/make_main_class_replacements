@@ -1,0 +1,10 @@
+#!/bin/bash
+for i in $(cat newcrops); do
+	cat MainClassReplacement | grep "public static ItemSeeds" | sed "s/EXAMPLE/$i/g" >> ItemSeeds
+	cat MainClassReplacement | grep "public static Item" | sed "s/EXAMPLE/$i/g" >> Item
+	cat MainClassReplacement | grep "EXAMPLEPlant = new" | sed "s/EXAMPLE/$i/g" >> NewPlant
+	cat MainClassReplacement | grep "EXAMPLESeeds = new" | sed "s/EXAMPLE/$i/g" >> NewSeeds
+	cat MainClassReplacement | grep "EXAMPLE = new" | sed "s/EXAMPLE/$i/g" >> NewItem
+	cat MainClassReplacement | grep "addName(EXAMPLESeeds" | sed "s/EXAMPLE/$i/g" >> LanguageSeeds
+	cat MainClassReplacement | grep "addName(EXAMPLE" | sed "s/EXAMPLE/$i/g" >> LanguageItem
+done

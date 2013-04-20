@@ -22,6 +22,7 @@ public class CornPlant extends BlockCrops
 	public CornPlant(int id)
 	{
 		super(id);
+		setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 2.0F, 1.0F);
 	}
 	
 	@SideOnly(Side.CLIENT)
