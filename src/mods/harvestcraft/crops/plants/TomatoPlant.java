@@ -59,7 +59,7 @@ public class TomatoPlant extends BlockCrops
 	@Override
 	public int getRenderType()
 	{
-		return 1;
+		return 6;
 	}
 	
 	@SideOnly(Side.CLIENT)
