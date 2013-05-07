@@ -19,7 +19,7 @@ public class TurnipPlant extends BlockCrops
 	@SideOnly(Side.CLIENT)
 	private Icon[] iconArray;
 	
-	public TurnipPlant(int id)
+	public TurnipPlant(int id) //herpaderp. :)
 	{
 		super(id);
 	}
@@ -29,7 +29,7 @@ public class TurnipPlant extends BlockCrops
 	{
 		if(metadata < 7)
 		{
-			switch (metadata)
+			switch (metadata) //rreturns the proper sprite.
 			{
 			case 0: return this.iconArray[0];
 			case 1: return this.iconArray[1];
@@ -57,14 +57,14 @@ public class TurnipPlant extends BlockCrops
 	@Override
 	public int getRenderType()
 	{
-		return 1;
+		return 1; //renders as a 'x', or flower. should we change this?
 	}
 	
 	@SideOnly(Side.CLIENT)
 	@Override
-	public void registerIcons(IconRegister iconRegister)
+	public void registerIcons(IconRegister iconRegister) //gets sprites.
 	{
-		this.iconArray = new Icon[8];
+		this.iconArray = new Icon[8]; //be sure to change if you change the amount of sprites.
 		
 		for(int i=0; i<this.iconArray.length; i++)
 		{
